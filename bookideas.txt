@@ -1,0 +1,24 @@
+* Graph tech:
+** Join -> hop: 
+*** example: 		 	 	 		
+SQL query to calculate the ways of travelling from Austin (AUS) to Agra (AGR) with two stops, we would end up writing a query that looked something like this: 
+ select a1.code,r1.dest,r2.dest,r3.dest from airports a1
+ join routes r1 on a1.code=r1.src
+join routes r2 on r1.dest=r2.src
+join routes r3 on r2.dest=r3.src
+ where a1.code='AUS' and r3.dest='AGR';
+
+ vs.
+ g.V().has('code','AUS').out().out().out().has('code','AGR').path().by('code')
+
+  
+g.V().has('code','AUS').repeat(out()).times(3).has('code','AGR').path().by('code')
+
+hop gurranttee O(1), Join is the single most expensive operation in the business world
+
+** what's good for graph : when you care your neighbor... , airport route, friend's friend, finanical fraut detection
+*** appromixiy query
+
+
+** what's not for graph: a line to order fast food, the next person's order has no (obvious) correlation/causal to the previuos' order
+
