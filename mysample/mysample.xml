@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>My First Experience with the Dangers of Documentation</title>
+<date>2017-10-20</date>
+</info>
+<preface>
+<title></title>
+<simpara>In my world, we don&#8217;t have to worry about mutant, script-injecting warlocks.
+No.
+We have something far worse.
+We&#8217;re plagued by Wolpertingers.</simpara>
+</preface>
+<chapter xml:id="_origins">
+<title>Origins</title>
+<simpara>You may not be familiar with these <link xl:href="http://en.wikipedia.org/wiki/Wolpertinger">ravenous beasts</link>, but, trust me, they&#8217;ll eat your shorts and suck the loops from your code.</simpara>
+</chapter>
+</book>
